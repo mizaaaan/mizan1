@@ -1,5 +1,5 @@
 # Perspective Blog
-
+https://mizaaaan.github.io/mizan1/
 A modern, responsive blog website built with pure HTML, CSS, and JavaScript. No frameworks, no build tools, no complexity.
 
 ## ✨ Features
