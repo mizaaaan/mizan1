@@ -1,7 +1,7 @@
 {
   "name": "perspective-blog",
   "version": "1.0.0",
-  "description": "A beautiful blog exploring ideas, finding inspiration, and discovering new ways of seeing the world",
+  "description": "A beautiful blog exploring ideas, finding inspiration, and discovering new ways of seeing the world. Built with pure HTML, CSS, and JavaScript.",
   "type": "module",
   "scripts": {
     "dev": "python -m http.server 8000",
@@ -13,7 +13,11 @@
     "lifestyle",
     "wellness",
     "travel",
-    "personal growth"
+    "creativity",
+    "personal growth",
+    "vanilla javascript",
+    "html",
+    "css"
   ],
   "author": "Perspective Team",
   "license": "MIT"
