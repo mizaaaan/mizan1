@@ -9,28 +9,149 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-
-    
     
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/81a53a5d-bba9-4427-a850-b6e9b2da00a3/id-preview-c7a65f7d--14bca0d6-a24e-4923-80bb-d3498f247b9f.lovable.app-1780822402004.png">
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/81a53a5d-bba9-4427-a850-b6e9b2da00a3/id-preview-c7a65f7d--14bca0d6-a24e-4923-80bb-d3498f247b9f.lovable.app-1780822402004.png">
+    <meta property="og:title" content="Perspective - Exploring Ideas, Finding Inspiration">
+    <meta property="og:description" content="A space for exploring ideas, finding inspiration, and discovering new ways of seeing the world through lifestyle, wellness, travel, and personal growth.">
     
-  
-  
-  
-  <meta property="og:title" content="Perspective - Exploring Ideas, Finding Inspiration">
-  <meta name="twitter:title" content="Perspective - Exploring Ideas, Finding Inspiration">
-  <meta property="og:description" content="A space for exploring ideas, finding inspiration, and discovering new ways of seeing the world through lifestyle, wellness, travel, and personal growth.">
-  <meta name="twitter:description" content="A space for exploring ideas, finding inspiration, and discovering new ways of seeing the world through lifestyle, wellness, travel, and personal growth.">
-</head>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@perspective_blog" />
+    <meta name="twitter:title" content="Perspective - Exploring Ideas, Finding Inspiration">
+    <meta name="twitter:description" content="A space for exploring ideas, finding inspiration, and discovering new ways of seeing the world through lifestyle, wellness, travel, and personal growth.">
+    
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
   <body>
-    <div id="root"></div>
-    <script src="/lovable-customization.js"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Header Navigation -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="/" class="logo">Perspective</a>
+          <nav class="nav">
+            <a href="/" class="nav-link active">Home</a>
+            <a href="/wellness" class="nav-link">Wellness</a>
+            <a href="/travel" class="nav-link">Travel</a>
+            <a href="/creativity" class="nav-link">Creativity</a>
+            <a href="/growth" class="nav-link">Growth</a>
+            <a href="/about" class="nav-link">About</a>
+            <a href="/contact" class="nav-link">Contact</a>
+          </nav>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Exploring Ideas, Finding Inspiration</h1>
+          <p class="hero-subtitle">Discover new perspectives on lifestyle, wellness, travel, and personal growth</p>
+          <a href="#articles" class="hero-button">Explore Articles</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+      <div class="container">
+        <div class="intro-content">
+          <h2>Welcome to Perspective</h2>
+          <p>A space for exploring ideas, finding inspiration, and discovering new ways of seeing the world.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles" id="articles">
+      <div class="container">
+        <h2 class="section-title">Latest Articles</h2>
+        <div class="articles-grid" id="articlesGrid">
+          <!-- Articles will be loaded here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+      <div class="container">
+        <h2 class="section-title">Explore by Category</h2>
+        <div class="categories-grid">
+          <a href="/wellness" class="category-card wellness">
+            <span class="category-icon">🧘</span>
+            <h3>Wellness</h3>
+            <p>Health, mindfulness, and wellbeing</p>
+          </a>
+          <a href="/travel" class="category-card travel">
+            <span class="category-icon">✈️</span>
+            <h3>Travel</h3>
+            <p>Adventures and cultural insights</p>
+          </a>
+          <a href="/creativity" class="category-card creativity">
+            <span class="category-icon">🎨</span>
+            <h3>Creativity</h3>
+            <p>Inspiration and artistic pursuits</p>
+          </a>
+          <a href="/growth" class="category-card growth">
+            <span class="category-icon">🌱</span>
+            <h3>Growth</h3>
+            <p>Personal development and learning</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Stay Updated</h2>
+          <p>Subscribe to receive our latest articles and insights</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Enter your email" required aria-label="Email address">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/authors">Authors</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/terms">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#" target="_blank">Twitter</a></li>
+              <li><a href="#" target="_blank">Instagram</a></li>
+              <li><a href="#" target="_blank">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Perspective. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
